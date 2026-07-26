@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: quartz.notosansdiary.com
+  baseUrl: notosansdiary.com
   ignorePatterns:
     - private
     - templates
