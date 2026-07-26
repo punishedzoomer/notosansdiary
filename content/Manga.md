@@ -1,10 +1,5 @@
 ---
-title: How I read my mangas for free without sus ads
-tags:
-  - manga
-  - foss
-  - ios
-draft: "false"
+title: Manga tips
 ---
 Lately I have been reading lots of mangas for free and without downloading anything - well except this app. 
 
