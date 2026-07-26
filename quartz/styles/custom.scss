@@ -1,3 +1,6 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+.explorer.collapsed {
+  flex: 0 1 2.5rem;
+}
