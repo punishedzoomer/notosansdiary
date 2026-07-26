@@ -103,7 +103,7 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: cinderpaper
+      theme: oxygen
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true

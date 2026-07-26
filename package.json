@@ -90,6 +90,7 @@
     "@quartz-themes/core": "^1.0.2",
     "@quartz-themes/everforest": "^1.0.0",
     "@quartz-themes/minimal": "^1.0.0",
+    "@quartz-themes/oxygen": "^1.0.0",
     "ansi-truncate": "^1.4.0",
     "async-mutex": "^0.5.0",
     "chokidar": "^5.0.0",
