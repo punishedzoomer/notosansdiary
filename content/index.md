@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to My internet digital garden
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+I have wanted to have a blog for such a long time , now I finally have it . 
+I like movies and manga, I will be uploading cool things here . 
