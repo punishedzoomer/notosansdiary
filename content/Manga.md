@@ -4,7 +4,7 @@ tags:
   - manga
   - foss
   - ios
-draft: "true"
+draft: "false"
 ---
 Lately I have been reading lots of mangas for free and without downloading anything - well except this app. 
 
