@@ -103,8 +103,9 @@ plugins:
   - source: "@quartz-themes/core"
     enabled: true
     options:
-      theme: reverie
+      theme: nightfox
       mode: both
+      
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/explicit-publish"
@@ -253,14 +254,6 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    order: 50
-    options:
-      theme: retro-larper
 layout:
   groups:
     toolbar:
