@@ -260,7 +260,7 @@ plugins:
     enabled: true
     order: 50
     options:
-      theme: vanilla-palettes.rose-pine-moon
+      theme: vanilla-palettes
 layout:
   groups:
     toolbar:
