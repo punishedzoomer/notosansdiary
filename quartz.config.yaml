@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Welcome to my digital garden
+  pageTitleSuffix: "| My garden "
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -253,6 +253,14 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source:
+      name: quartz-themes
+      repo: github:saberzero1/quartz-themes
+      subdir: plugin
+    enabled: true
+    order: 50
+    options:
+      theme: ayu
 layout:
   groups:
     toolbar:
