@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: 𓆉𓆉︎𓆉
-  pageTitleSuffix: ""
+  pageTitleSuffix: "| My internet garden"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -18,7 +18,7 @@ configuration:
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
-      code: IBM Plex Mono
+      code: Ubuntu
     colors:
       lightMode:
         light: "#faf8f8"
