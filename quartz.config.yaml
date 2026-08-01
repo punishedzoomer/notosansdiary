@@ -156,7 +156,7 @@ plugins:
   - source: "@quartz-community/graph"
     enabled: true
     layout:
-      position: right
+      position: afterBody
       priority: 10
   - source: "@quartz-community/search"
     enabled: true
