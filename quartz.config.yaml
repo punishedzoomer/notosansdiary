@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: notosansdiary
+  pageTitle: 𓆉𓆉︎𓆉
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
