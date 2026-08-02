@@ -43,10 +43,10 @@ const DEFAULT_MONO = "ui-monospace, SFMono-Regular, SF Mono, Menlo, monospace"
 
 export function getFontSpecificationName(spec: FontSpecification): string {
   if (typeof spec === "string") {
-    return spec
+    return spec.trim()
   }
 
-  return spec.name
+  return spec.name.trim()
 }
 
 function formatFontSpecification(
@@ -54,7 +54,9 @@ function formatFontSpecification(
   spec: FontSpecification,
 ) {
   if (typeof spec === "string") {
-    spec = { name: spec }
+    spec = { name: spec.trim() }
+  } else {
+    spec = { ...spec, name: spec.name.trim() }
   }
 
   const defaultIncludeWeights = type === "header" ? [400, 700] : [400, 600]
@@ -86,12 +88,18 @@ function formatFontSpecification(
 }
 
 export function googleFontHref(theme: Theme) {
-  const { header, body, code } = theme.typography
+  const { header, body, code, title } = theme.typography
   const headerFont = formatFontSpecification("header", header)
   const bodyFont = formatFontSpecification("body", body)
   const codeFont = formatFontSpecification("code", code)
 
-  return `https://fonts.googleapis.com/css2?family=${headerFont}&family=${bodyFont}&family=${codeFont}&display=swap`
+  let href = `https://fonts.googleapis.com/css2?family=${headerFont}&family=${bodyFont}&family=${codeFont}`
+  if (title) {
+    const titleFont = formatFontSpecification("title", title)
+    href += `&family=${titleFont}`
+  }
+
+  return `${href}&display=swap`
 }
 
 export function googleFontSubsetHref(theme: Theme, text: string) {

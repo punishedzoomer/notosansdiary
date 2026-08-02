@@ -16,8 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
+      title: Handlee
       header: Schibsted Grotesk
-      body: Noto Sans 
+      body: Noto Sans
       code: Ubuntu
     colors:
       lightMode:

@@ -2,15 +2,6 @@
 @use "./explorer";
 @use "./toc";
 
-// Handwritten font definitions
-@font-face {
-  font-family: 'Handlee';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/handlee/v20/-F6xfjBsISg9aMakDmo.ttf') format('truetype');
-}
-
 // Style ONLY the homepage (data-slug="index")
 body[data-slug="index"] {
   .article-title {
