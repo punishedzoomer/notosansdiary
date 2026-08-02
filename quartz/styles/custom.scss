@@ -2,10 +2,21 @@
 @use "./explorer";
 @use "./toc";
 
-// Style ONLY the homepage (data-slug="index")
+// Enforce Lora across ALL pages, titles, headings, and sidebars site-wide
+body,
+article,
+p,
+h1, h2, h3, h4, h5, h6,
+a, li, span, button,
+.page-title,
+.article-title {
+  font-family: var(--bodyFont) !important;
+}
+
+// EXCEPT ONLY the index page main title, which uses Handlee
 body[data-slug="index"] {
   .article-title {
-    font-family: 'Handlee', cursive;
+    font-family: 'Handlee', cursive !important;
     text-align: center;
     font-size: 2.8rem;
     letter-spacing: 0.5px;
@@ -36,6 +47,8 @@ article.list-cards ul {
 
 // Make the sidebars and center all use the exact same background and remove vertical separator borders
 .page > #quartz-body {
+  column-gap: 0.5rem !important;
+
   & div.sidebar,
   & div.sidebar.left,
   & div.sidebar.right,
@@ -47,11 +60,17 @@ article.list-cards ul {
     border-right: none !important;
     box-shadow: none !important;
   }
-}
 
-// Ensure body text strictly uses Lora (--bodyFont)
-body,
-article,
-p {
-  font-family: var(--bodyFont) !important;
+  & .sidebar.left {
+    padding-right: 0.75rem !important;
+  }
+
+  & .sidebar.right {
+    padding-left: 0.75rem !important;
+  }
+
+  & .center {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
 }
