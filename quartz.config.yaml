@@ -166,9 +166,8 @@ plugins:
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
-      position: right
+      position: afterBody
       priority: 50
-      condition: not-index
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
