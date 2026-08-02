@@ -7,54 +7,54 @@ import { Theme } from "./util/theme"
 export type Analytics =
   | null
   | {
-      provider: "plausible"
-      host?: string
-    }
+    provider: "plausible"
+    host?: string
+  }
   | {
-      provider: "google"
-      tagId: string
-    }
+    provider: "google"
+    tagId: string
+  }
   | {
-      provider: "umami"
-      websiteId: string
-      host?: string
-    }
+    provider: "umami"
+    websiteId: string
+    host?: string
+  }
   | {
-      provider: "goatcounter"
-      websiteId: string
-      host?: string
-      scriptSrc?: string
-    }
+    provider: "goatcounter"
+    websiteId: string
+    host?: string
+    scriptSrc?: string
+  }
   | {
-      provider: "posthog"
-      apiKey: string
-      host?: string
-    }
+    provider: "posthog"
+    apiKey: string
+    host?: string
+  }
   | {
-      provider: "tinylytics"
-      siteId: string
-    }
+    provider: "tinylytics"
+    siteId: string
+  }
   | {
-      provider: "cabin"
-      host?: string
-    }
+    provider: "cabin"
+    host?: string
+  }
   | {
-      provider: "clarity"
-      projectId?: string
-    }
+    provider: "clarity"
+    projectId?: string
+  }
   | {
-      provider: "matomo"
-      host: string
-      siteId: string
-    }
+    provider: "matomo"
+    host: string
+    siteId: string
+  }
   | {
-      provider: "vercel"
-    }
+    provider: "vercel"
+  }
   | {
-      provider: "rybbit"
-      siteId: string
-      host?: string
-    }
+    provider: "rybbit"
+    siteId: string
+    host?: string
+  }
 
 export interface GlobalConfiguration {
   pageTitle: string

@@ -17,12 +17,12 @@ configuration:
     cdnCaching: true
     typography:
       header: Schibsted Grotesk
-      body: Source Sans Pro
+      body: Noto Sans 
       code: Ubuntu
     colors:
       lightMode:
         light: "#faf8f8"
-        lightgray: "#e5e5e5"
+        lightgray: "#faf8f8"
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
@@ -32,7 +32,7 @@ configuration:
         textHighlight: "#fff23688"
       darkMode:
         light: "#161618"
-        lightgray: "#393639"
+        lightgray: "#161618"
         gray: "#646464"
         darkgray: "#d4d4d4"
         dark: "#ebebec"
@@ -67,12 +67,6 @@ plugins:
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40
-  - source: "@quartz-community/table-of-contents"
-    enabled: true
-    order: 50
-    layout:
-      position: right
-      priority: 30
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -105,7 +99,6 @@ plugins:
     options:
       theme: nightfox
       mode: both
-      
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/explicit-publish"
@@ -158,6 +151,7 @@ plugins:
     layout:
       position: afterBody
       priority: 10
+      condition: not-index
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -171,6 +165,7 @@ plugins:
     layout:
       position: right
       priority: 50
+      condition: not-index
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -181,6 +176,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 20
+      condition: not-index
   - source: "@quartz-community/tag-list"
     enabled: false
     layout:
@@ -254,6 +250,19 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/table-of-contents
+    enabled: true
+    options:
+      maxDepth: 3
+      minEntries: 1
+      showByDefault: true
+      collapseByDefault: false
+      layout: modern
+    order: 50
+    layout:
+      position: right
+      priority: 10
+      condition: not-index
 layout:
   groups:
     toolbar:

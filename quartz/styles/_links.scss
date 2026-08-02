@@ -1,0 +1,46 @@
+// ============================================
+// Article & Content Link Styling (Bubble / Expand Hover)
+// ============================================
+
+// Remove all highlight blocks/backgrounds from internal wikilinks
+a,
+a.internal {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+article a,
+.popover a,
+.backlinks a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--secondary);
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease-in-out;
+  transform-origin: left center;
+
+  &:hover {
+    color: var(--tertiary) !important;
+    transform: scale(1.05);
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.external {
+  text-decoration: none;
+}
+
+.blue-link {
+  color: var(--secondary) !important;
+}

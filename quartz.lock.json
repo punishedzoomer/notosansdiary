@@ -1,4 +1,11 @@
 {
   "version": "1.0.0",
-  "plugins": {}
+  "plugins": {
+    "table-of-contents": {
+      "source": "github:quartz-community/table-of-contents",
+      "resolved": "https://github.com/quartz-community/table-of-contents.git",
+      "commit": "02c30261c64610fd0faaa3181263a91d3ff60b45",
+      "installedAt": "2026-08-01T10:54:26.064Z"
+    }
+  }
 }

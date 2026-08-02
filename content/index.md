@@ -1,6 +1,9 @@
 ---
 title: Welcome to My internet digital garden
 ---
+<p class="home-subtitle">a digital collection of my incomplete thoughts and ideas.</p>
+
+
 I have wanted to have a blog for such a long time , now I finally have it . 
 I like movies and manga, I will be uploading cool things here . 
 
