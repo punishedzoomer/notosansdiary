@@ -17,8 +17,8 @@ configuration:
     cdnCaching: true
     typography:
       title: Handlee
-      header: Schibsted Grotesk
-      body: Noto Sans
+      header: Lora
+      body: Lora
       code: Ubuntu
     colors:
       lightMode:
@@ -95,6 +95,9 @@ plugins:
     order: 92
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+    options:
+      header: Lora
+      body: Lora
   - source: "@quartz-themes/core"
     enabled: true
     options:
@@ -150,9 +153,8 @@ plugins:
   - source: "@quartz-community/graph"
     enabled: true
     layout:
-      position: afterBody
-      priority: 10
-      condition: not-index
+      position: right
+      priority: 15
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -195,7 +197,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -263,7 +265,6 @@ plugins:
     layout:
       position: right
       priority: 10
-      condition: not-index
 layout:
   groups:
     toolbar:

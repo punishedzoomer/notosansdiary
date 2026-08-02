@@ -14,7 +14,8 @@ body[data-slug="index"] {
   .home-subtitle {
     text-align: center;
     font-size: 1.25rem;
-    color: var(--darkgray);
+    color: var(--gray) !important;
+    opacity: 0.70;
     margin-top: 0;
     margin-bottom: 1.5rem;
   }
@@ -33,7 +34,7 @@ article.list-cards ul {
   padding-inline-start: 0;
 }
 
-// Make the sidebars and center all use the exact same background
+// Make the sidebars and center all use the exact same background and remove vertical separator borders
 .page > #quartz-body {
   & div.sidebar,
   & div.sidebar.left,
@@ -42,5 +43,15 @@ article.list-cards ul {
   & div.center,
   & footer {
     background-color: var(--background-primary) !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
   }
+}
+
+// Ensure body text strictly uses Lora (--bodyFont)
+body,
+article,
+p {
+  font-family: var(--bodyFont) !important;
 }
