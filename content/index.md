@@ -24,7 +24,7 @@ I have always felt some sort of pain because i didn't have a personal website so
 
 Feel free to wander around! 
 
--  **[[Guides]]** — Tutorials, documentation, and how I made this site !!
+-  **[Guides](Guides)**— Tutorials, documentation, and how I made this site !!
 -  **[[Hobbies]]** — Manga, movies, and personal interests outside of coding.
 -  **[[Notes]]** — Brainstorms, thoughts, and quick reference material.
 
