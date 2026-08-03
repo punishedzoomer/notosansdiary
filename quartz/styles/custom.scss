@@ -1,13 +1,22 @@
 @use "./links";
 @use "./explorer";
 @use "./toc";
+@use "./code";
 
-// Enforce Lora across ALL pages, titles, headings, and sidebars site-wide
+// Enforce Lora across ALL pages, titles, headings, and sidebars site-wide (except code blocks)
 body,
 article,
 p,
-h1, h2, h3, h4, h5, h6,
-a, li, span, button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a:not(pre a):not(code a),
+li:not(pre li):not(code li),
+span:not(pre span):not(code span),
+button:not(pre button):not(code button),
 .page-title,
 .article-title {
   font-family: var(--bodyFont) !important;
@@ -46,7 +55,7 @@ article.list-cards ul {
 }
 
 // Make the sidebars and center all use the exact same background and remove vertical separator borders
-.page > #quartz-body {
+.page>#quartz-body {
   column-gap: 0.5rem !important;
 
   & div.sidebar,

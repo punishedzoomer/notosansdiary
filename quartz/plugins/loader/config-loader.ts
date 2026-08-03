@@ -138,8 +138,8 @@ function validateDependencies(
       if (pluginOrder < depOrder) {
         errors.push(
           `Plugin "${pluginName}" (order: ${pluginOrder}) depends on "${depName}" (order: ${depOrder}), ` +
-            `but "${pluginName}" is configured to run first. Either increase "${pluginName}"'s order above ${depOrder} ` +
-            `or decrease "${depName}"'s order below ${pluginOrder}.`,
+          `but "${pluginName}" is configured to run first. Either increase "${pluginName}"'s order above ${depOrder} ` +
+          `or decrease "${depName}"'s order below ${pluginOrder}.`,
         )
       }
     }
@@ -276,8 +276,8 @@ export async function loadQuartzConfig(
     } catch (err) {
       console.error(
         styleText("red", `✗`) +
-          ` Failed to install plugin: ${styleText("yellow", formatSourceDisplay(entry.source))}\n` +
-          `  ${err instanceof Error ? err.message : String(err)}`,
+        ` Failed to install plugin: ${styleText("yellow", formatSourceDisplay(entry.source))}\n` +
+        `  ${err instanceof Error ? err.message : String(err)}`,
       )
     }
   }
@@ -296,8 +296,8 @@ export async function loadQuartzConfig(
     } catch (err) {
       console.error(
         styleText("red", `✗`) +
-          ` Failed to load manifest: ${styleText("yellow", formatSourceDisplay(entry.source))}\n` +
-          `  ${err instanceof Error ? err.message : String(err)}`,
+        ` Failed to load manifest: ${styleText("yellow", formatSourceDisplay(entry.source))}\n` +
+        `  ${err instanceof Error ? err.message : String(err)}`,
       )
     }
   }
@@ -387,7 +387,7 @@ export async function loadQuartzConfig(
           } else {
             console.warn(
               styleText("yellow", `⚠`) +
-                ` Could not determine category for plugin "${extractPluginName(entry.source)}". Skipping.`,
+              ` Could not determine category for plugin "${extractPluginName(entry.source)}". Skipping.`,
             )
           }
         } catch {
@@ -402,7 +402,7 @@ export async function loadQuartzConfig(
           if (!hasComponents && !hasFrames) {
             console.warn(
               styleText("yellow", `⚠`) +
-                ` Could not load plugin "${extractPluginName(entry.source)}" to detect category. Skipping.`,
+              ` Could not load plugin "${extractPluginName(entry.source)}" to detect category. Skipping.`,
             )
           }
         }
@@ -453,8 +453,8 @@ export async function loadQuartzConfig(
         if (!factory) {
           console.warn(
             styleText("yellow", `⚠`) +
-              ` Plugin "${extractPluginName(entry.source)}" has no factory function for category "${expectedCategory}". ` +
-              `Ensure your plugin exports a default function, a "plugin" named export, or a single exported function.`,
+            ` Plugin "${extractPluginName(entry.source)}" has no factory function for category "${expectedCategory}". ` +
+            `Ensure your plugin exports a default function, a "plugin" named export, or a single exported function.`,
           )
           continue
         }
@@ -464,15 +464,15 @@ export async function loadQuartzConfig(
         if (!instance || typeof instance !== "object") {
           console.warn(
             styleText("yellow", `⚠`) +
-              ` Plugin "${extractPluginName(entry.source)}" factory did not return a valid plugin instance. Skipping.`,
+            ` Plugin "${extractPluginName(entry.source)}" factory did not return a valid plugin instance. Skipping.`,
           )
           continue
         }
         if (!validateCategory(instance, expectedCategory)) {
           console.warn(
             styleText("yellow", `⚠`) +
-              ` Plugin "${extractPluginName(entry.source)}" declares category "${expectedCategory}" ` +
-              `but its factory returned an instance missing the required methods. Skipping.`,
+            ` Plugin "${extractPluginName(entry.source)}" declares category "${expectedCategory}" ` +
+            `but its factory returned an instance missing the required methods. Skipping.`,
           )
           continue
         }
@@ -480,7 +480,7 @@ export async function loadQuartzConfig(
       } catch (err) {
         console.error(
           styleText("red", `✗`) +
-            ` Failed to instantiate plugin "${extractPluginName(entry.source)}": ${err instanceof Error ? err.message : String(err)}`,
+          ` Failed to instantiate plugin "${extractPluginName(entry.source)}": ${err instanceof Error ? err.message : String(err)}`,
         )
       }
     }
@@ -675,7 +675,7 @@ export async function loadQuartzLayout(layoutOverrides?: {
               "left" | "right" | "beforeBody" | "afterBody"
             >
             if (key in ptLayout) {
-              ;(ptLayout as Record<string, unknown>)[key] = []
+              ; (ptLayout as Record<string, unknown>)[key] = []
             }
           }
         }
@@ -839,7 +839,7 @@ function buildLayoutForEntries(
       FullPageLayout,
       "left" | "right" | "beforeBody" | "afterBody"
     >
-    ;(result as Record<string, QuartzComponent[]>)[key] = resolved
+      ; (result as Record<string, QuartzComponent[]>)[key] = resolved
   }
 
   return result
@@ -946,7 +946,7 @@ function applyConditionWrapper(component: QuartzComponent, conditionName: string
   if (!predicate) {
     console.warn(
       styleText("yellow", `⚠`) +
-        ` Unknown condition "${conditionName}". Component will always render.`,
+      ` Unknown condition "${conditionName}". Component will always render.`,
     )
     return component
   }

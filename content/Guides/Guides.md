@@ -9,10 +9,10 @@ Welcome to the Guides section! Here you'll find technical write-ups, documentati
 
 ---
 
-## 🛠️ Site & Setup Guides
+##  Site & Setup Guides
 - **[[Garden]]** — How I built & customized this Quartz digital garden (typography, Templater workflow, SCSS, and system configuration).
 
-## 📖 Other Guides
+##  Other Guides
 - **[[aidoku]]** — Notes and guide on Aidoku sources and setup.
 
 %% waypoint %%

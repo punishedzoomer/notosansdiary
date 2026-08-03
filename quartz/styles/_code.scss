@@ -1,0 +1,43 @@
+// Enforce code font across all code elements and syntax tokens
+code,
+code *,
+pre,
+pre *,
+kbd,
+var,
+samp {
+  font-family: var(--codeFont) !important;
+}
+
+// Code block border around title using current active color theme
+figure[data-rehype-pretty-code-figure] {
+  border: 1px solid var(--secondary);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  background-color: var(--light);
+
+  figcaption[data-rehype-pretty-code-title] {
+    font-family: var(--codeFont) !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.3em 1em;
+    border-radius: 0;
+    color: var(--light);
+    background-color: var(--secondary);
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+  }
+
+  pre[data-language],
+  pre {
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+    padding-top: 0.5em;
+    background-color: transparent;
+  }
+}

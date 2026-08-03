@@ -11,6 +11,7 @@ configuration:
   ignorePatterns:
     - private
     - templates
+    - _templates
     - .obsidian
   theme:
     fontOrigin: googleFonts
@@ -19,7 +20,7 @@ configuration:
       title: Handlee
       header: Lora
       body: Lora
-      code: Ubuntu
+      code: "JetBrains Mono"
     colors:
       lightMode:
         light: "#faf8f8"
@@ -98,6 +99,7 @@ plugins:
     options:
       header: Lora
       body: Lora
+      code: "JetBrains Mono"
   - source: "@quartz-themes/core"
     enabled: true
     options:
