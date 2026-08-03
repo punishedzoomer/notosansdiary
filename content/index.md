@@ -9,7 +9,9 @@ Hi there! I'm **Hervé or 엘베** in Korean and I am currently a 4th year softw
 
 I created this space as a personal corner of the web to document my work, share what I'm learning, and host my portfolio. I have wanted to have a personal blog since highschool but I would end up not maintaining it because they are too much work . 
 
-But surely this time around I will try and post frequently thanks to [quartz](https://github.com/jackyzha0/quartz)
+I will try and put in effort to maintain this site while also adding my projects here . 
+
+
 
 ---
 

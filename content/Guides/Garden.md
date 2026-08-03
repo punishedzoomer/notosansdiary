@@ -1,7 +1,7 @@
 ---
-title: How I Built & Customized My Quartz Digital Garden
+title: Digital Garden
 ---
-## Challenges I faced making this garden 
+## Challenges I faced while making this garden 
 
 I am making this writeup because nearly every quartz based website I consulted while making this site was based on versions less than Quartz V5 . 
 
@@ -49,3 +49,6 @@ So I went ahead and changed this code in this file
 
 
 
+
+> [!NOTE] Work in Progress
+> Notes in this garden are at different stages of maturity. Some are quick seeds, while others are detailed guides. Feel free to browse around!
