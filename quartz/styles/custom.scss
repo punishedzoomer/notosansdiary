@@ -83,3 +83,12 @@ article.list-cards ul {
     padding-right: 0.5rem !important;
   }
 }
+
+// Expand embedded PDF viewer height for readable previews
+iframe.pdf {
+  height: 82vh !important;
+  min-height: 650px !important;
+  width: 100% !important;
+  border: 1px solid var(--lightgray) !important;
+  border-radius: 6px !important;
+}
