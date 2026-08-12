@@ -11,7 +11,8 @@ I created this space as a personal corner of the web to document my work, share 
 
 I will try and put in effort to maintain this site while also adding my projects here . 
 
-
+> [!abstract]  Resume & Credentials
+>  If you are a recruiter please check the **[[Resume/Resume|Resume & CV Page]]**.
 
 ---
 
