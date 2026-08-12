@@ -1,5 +1,5 @@
 ---
-title: Resume / 이력서
+title: Resume
 tags:
   - resume
   - portfolio
